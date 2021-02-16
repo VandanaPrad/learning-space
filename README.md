@@ -1,2 +1,2 @@
 # learning-space
-Repository for learning purpose
+Repository for learning and training purpose
