@@ -1,0 +1,18 @@
+stages:
+  - build
+  - test
+  
+ build:
+   stage: build
+   script:
+     - mkdir build
+     - cd build
+     - touch result.txt
+     - echo "output" > result.txt
+   
+test:
+  stage: test
+  script:
+    - test -f build/result.txt
+    - cd build
+    - grep "output" result.txt
